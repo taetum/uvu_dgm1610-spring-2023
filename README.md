@@ -1,1 +1,1 @@
-# uvu_dgm1610-spring-2023
+# dgm1610 projects
