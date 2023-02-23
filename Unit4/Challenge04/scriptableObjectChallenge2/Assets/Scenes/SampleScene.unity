@@ -886,7 +886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 338aafddc79ac4f4eaa3cd338ca4b7c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Weapon: {fileID: 11400000, guid: 5949d4f8efc65274fbe08a772d8b1aec, type: 2}
+  Weapon: {fileID: 11400000, guid: 126e5583cba0be14ebe817395a184c24, type: 2}
   weaponName: {fileID: 1449011425}
   weaponDescription: {fileID: 1377835496}
   weaponSprite: {fileID: 618641373}
