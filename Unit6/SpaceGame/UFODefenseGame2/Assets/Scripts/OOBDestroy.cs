@@ -30,10 +30,9 @@ public class OOBDestroy : MonoBehaviour
         }
         else if (transform.position.z < bottomBounds)
         {
-           // Debug.Log("Game Over.");
+            Debug.Log("Game Over.");
             Destroy(gameObject);
-
-            //   Time.timeScale = 0;
+            Time.timeScale = 0;
         }
     }
 }

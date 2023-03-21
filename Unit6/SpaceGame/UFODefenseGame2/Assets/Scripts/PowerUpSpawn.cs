@@ -8,6 +8,8 @@ public class PowerUpSpawn : MonoBehaviour
     public GameObject PowerUp;
     public float spawnRate = 20;
     public float timer = 0;
+    private float spawnRangeX = 50.0f;
+    private float spawnPosZ = 30.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +24,14 @@ public class PowerUpSpawn : MonoBehaviour
             timer = timer + Time.deltaTime;
         }
         else {
-            Instantiate(PowerUp, transform.position, transform.rotation);
+            SpawnPowerUp();
             timer = 0;
              }
     }
+
+     void SpawnPowerUp()
+    {
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 1.65f, spawnPosZ);
+        Instantiate(PowerUp, spawnPos, PowerUp.transform.rotation); //spawns UFO
+    } 
 }
