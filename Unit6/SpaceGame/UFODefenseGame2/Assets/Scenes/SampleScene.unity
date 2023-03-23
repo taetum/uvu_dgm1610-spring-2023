@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PowerUp: {fileID: 1836683934943675463, guid: 8801ae7c0ca826f479605f30292b1784, type: 3}
-  spawnRate: 15
+  spawnRate: 2
   timer: 0
 --- !u!1 &705507993
 GameObject:

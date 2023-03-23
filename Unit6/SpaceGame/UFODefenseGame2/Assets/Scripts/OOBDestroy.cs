@@ -32,7 +32,7 @@ public class OOBDestroy : MonoBehaviour
         {
             Debug.Log("Game Over.");
             Destroy(gameObject);
-            Time.timeScale = 0;
+           // Time.timeScale = 0;
         }
     }
 }

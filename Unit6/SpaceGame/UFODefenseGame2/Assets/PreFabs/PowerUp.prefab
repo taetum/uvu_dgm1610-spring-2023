@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3708094074538496193}
   - component: {fileID: -5175630081233857949}
   - component: {fileID: 923208762751305528}
-  - component: {fileID: 746074381993746255}
+  - component: {fileID: -1856146562605764902}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: PowerUp
@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8f0621b54d01597478db2d384700a05b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBounds: 50
   bottomBounds: -30
---- !u!114 &746074381993746255
+--- !u!114 &-1856146562605764902
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,8 +154,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1836683934943675463}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c45fcf24dbcbcd14f8a763b6b1fb9d75, type: 3}
+  m_Script: {fileID: 11500000, guid: b99eb3a4f0b716a428f6c99cfdf57416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ufoPrefabs:
-  - {fileID: 1836683934943675463}
+  rainbowSpeed: 20
