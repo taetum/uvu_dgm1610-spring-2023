@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MoveForward : MonoBehaviour
 {
+
     public float speed = 50.0f; 
 
     // Update is called once per frame
@@ -12,4 +13,5 @@ public class MoveForward : MonoBehaviour
         // move gameobject forward
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
+
 }

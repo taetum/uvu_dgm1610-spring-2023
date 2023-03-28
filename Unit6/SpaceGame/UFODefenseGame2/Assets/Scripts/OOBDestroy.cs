@@ -4,23 +4,16 @@ using UnityEngine;
 
 public class OOBDestroy : MonoBehaviour
 {
-
+    public GameObject GameManager;
+    public GameManager gameManager;
     public float topBounds = 30.0f;
 
     public float bottomBounds = -10.0f;
 
-
-  /*  void Awake()
+    private void Awake()
     {
-        //  Time.timeScale = 1.0f;
-    } */
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -30,9 +23,20 @@ public class OOBDestroy : MonoBehaviour
         }
         else if (transform.position.z < bottomBounds)
         {
-            Debug.Log("Game Over.");
             Destroy(gameObject);
-           // Time.timeScale = 0;
+            GameEnd();
         }
     }
+    void GameEnd()
+    {
+        if (gameObject.transform.position.z <bottomBounds)
+        {
+            if(gameObject.tag == "Enemy")
+            {
+                Debug.Log("Gameover");
+                gameManager.isGameOver = true;
+            }
+           
+        }
+    } 
 }
