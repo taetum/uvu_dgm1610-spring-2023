@@ -102,9 +102,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalInput: 0
   speed: 50
-  xRange: 56
+  xRange: 60
   blaster: {fileID: 2700502002568643349}
   laserbolt: {fileID: 3741781561656794393, guid: 6bc99fec09637f14fb296331a8d37cb5, type: 3}
+  gameManager: {fileID: 0}
 --- !u!65 &-1450523302666959631
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -9,7 +9,13 @@ public class PlayerMovement : MonoBehaviour
     public float xRange;
     public Transform blaster;
     public GameObject laserbolt;
+    public GameManager gameManager;
 
+
+    void Start()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -31,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // creates a laser bolt at blaster transform position, maintaining object's rotation
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && gameManager.isGameOver == false)
         {
             Instantiate(laserbolt, blaster.transform.position, laserbolt.transform.rotation);
         }
