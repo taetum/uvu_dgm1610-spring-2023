@@ -10,11 +10,14 @@ public class PlayerMovement : MonoBehaviour
     public Transform blaster;
     public GameObject laserbolt;
     public GameManager gameManager;
+    private AudioSource playerAudio;
+    public AudioClip shootSound;
 
 
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        playerAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -40,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && gameManager.isGameOver == false)
         {
             Instantiate(laserbolt, blaster.transform.position, laserbolt.transform.rotation);
+            playerAudio.PlayOneShot(shootSound, 1.0f);
         }
     }
 
