@@ -16,6 +16,7 @@ public class CollisionDetect : MonoBehaviour
     {
         scoreManager.IncreaseScore(scoreToGive);
         Destroy(other.gameObject);
-        Destroy(gameObject);
+        Destroy(gameObject); 
+    
     }
 }

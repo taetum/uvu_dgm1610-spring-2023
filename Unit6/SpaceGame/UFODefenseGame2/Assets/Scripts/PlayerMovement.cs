@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public GameManager gameManager;
     private AudioSource playerAudio;
     public AudioClip shootSound;
+    public AudioClip deathSound;
 
 
     void Start()
@@ -44,6 +45,10 @@ public class PlayerMovement : MonoBehaviour
         {
             Instantiate(laserbolt, blaster.transform.position, laserbolt.transform.rotation);
             playerAudio.PlayOneShot(shootSound, 1.0f);
+        }
+        if (gameManager.isGameOver)
+        {
+            playerAudio.PlayOneShot(deathSound, 0.01f);
         }
     }
 
