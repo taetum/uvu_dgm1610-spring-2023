@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using System.Globalization;
 
-[RequireComponent(typeof(Text))]
+// [RequireComponent(typeof(Text))]
 public class TextLabelBehavior : MonoBehaviour
 {
     private TextMeshProUGUI label;
