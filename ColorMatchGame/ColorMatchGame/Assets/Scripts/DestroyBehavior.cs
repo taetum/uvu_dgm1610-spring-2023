@@ -16,4 +16,8 @@ public class DestroyBehavior : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public void DestroyObj(GameObject obj) //THIS WAS ADDED i didn't know how to do it otherwise. 
+    {
+        Destroy(obj);
+    }
 }

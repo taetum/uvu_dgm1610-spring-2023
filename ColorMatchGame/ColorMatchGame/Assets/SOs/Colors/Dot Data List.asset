@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea21c732e97e135458c33ea2ab627933, type: 3}
-  m_Name: Color Data List
+  m_Name: Dot Data List
   m_EditorClassIdentifier: 
   colorIDList:
   - {fileID: 11400000, guid: ef4d4caefef6e484dbe0d7027be170f0, type: 2}

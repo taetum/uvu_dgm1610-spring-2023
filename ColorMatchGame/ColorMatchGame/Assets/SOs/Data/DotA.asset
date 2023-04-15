@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d8082fc56320124f923b0af16b5ae27, type: 3}
-  m_Name: Prefab Instancer
+  m_Script: {fileID: 11500000, guid: 6069184d63999c34caeb3baf88c86d38, type: 3}
+  m_Name: DotA
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4700693254335551819, guid: cca1c1be9b41d7c4682096247fcf8e24, type: 3}
+  value: {x: -4, y: -3, z: 0}

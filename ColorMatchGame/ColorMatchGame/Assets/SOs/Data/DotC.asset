@@ -9,6 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff1d39e091916194fb268b4b11534799, type: 3}
-  m_Name: Frog
+  m_Script: {fileID: 11500000, guid: 6069184d63999c34caeb3baf88c86d38, type: 3}
+  m_Name: DotC
   m_EditorClassIdentifier: 
+  value: {x: 4, y: -3, z: 0}

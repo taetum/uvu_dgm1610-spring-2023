@@ -9,7 +9,7 @@ using System.Globalization;
 // [RequireComponent(typeof(Text))]
 public class TextLabelBehavior : MonoBehaviour
 {
-    private TextMeshProUGUI label;
+    public TextMeshProUGUI label; //changed this to pub
     public UnityEvent startEvent;
     public int value;
 
