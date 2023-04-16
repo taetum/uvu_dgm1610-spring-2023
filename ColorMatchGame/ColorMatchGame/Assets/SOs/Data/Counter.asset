@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4420191db94bd124791467edefda616b, type: 3}
   m_Name: Counter
   m_EditorClassIdentifier: 
-  value: 0
+  value: 4
