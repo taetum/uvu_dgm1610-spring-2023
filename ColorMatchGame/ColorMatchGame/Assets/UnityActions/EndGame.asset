@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4420191db94bd124791467edefda616b, type: 3}
-  m_Name: Counter
+  m_Script: {fileID: 11500000, guid: 4275239a9cda60a41ab22551922dd53e, type: 3}
+  m_Name: EndGame
   m_EditorClassIdentifier: 
-  value: 0

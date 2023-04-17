@@ -12,6 +12,12 @@ public class CoRoutineBehavior : MonoBehaviour
     private WaitForFixedUpdate wffuObj;
     public bool canRun;
 
+    public bool CanRun
+    {
+        get => canRun;
+        set => canRun = value;
+    }
+
     private void Start()
     {
         startEvent.Invoke();
@@ -58,5 +64,6 @@ public class CoRoutineBehavior : MonoBehaviour
         }
   
     }
+ 
 
 }

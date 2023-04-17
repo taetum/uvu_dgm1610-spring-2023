@@ -790,6 +790,7 @@ GameObject:
   - component: {fileID: 544998530}
   - component: {fileID: 544998529}
   - component: {fileID: 544998528}
+  - component: {fileID: 544998531}
   m_Layer: 5
   m_Name: ScorePointsText
   m_TagString: Untagged
@@ -829,6 +830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a9ef75810f763b44ab3d7055ea028cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  label: {fileID: 0}
   startEvent:
     m_PersistentCalls:
       m_Calls:
@@ -942,6 +944,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544998526}
   m_CullTransparentMesh: 1
+--- !u!114 &544998531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544998526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66c45d868d9df46488f20eb436cfaa33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: 77628fa738631af4baf91129663618aa, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 544998528}
+        m_TargetAssemblyTypeName: TextLabelBehavior, Assembly-CSharp
+        m_MethodName: UpdateLabel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 49053c40ce3132d418ce3983384ea6bc, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &598392761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1143,8 +1173,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8add4a01db67616488c10718de91238a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canRun: 1
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  startCountEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  repeatCountEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endCountEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  repeatUntilFalseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  counterNum: {fileID: 0}
   seconds: 3
+  canRun: 1
 --- !u!1 &836808428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,6 +1771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a9ef75810f763b44ab3d7055ea028cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  label: {fileID: 0}
   startEvent:
     m_PersistentCalls:
       m_Calls:
